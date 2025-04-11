@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdix20igfbhyr"]
+
+[ext_resource type="Texture2D" uid="uid://s8357v41nnp0" path="res://resources/Pixel Adventure 1/Free/Terrain/Terrain (16x16).png" id="1_nygrq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3mnxr"]
+size = Vector2(46, 2)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_nygrq")
+region_enabled = true
+region_rect = Rect2(272.69, 16.6485, 46.3023, 3.45036)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3mnxr")
+one_way_collision = true
